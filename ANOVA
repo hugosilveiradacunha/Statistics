@@ -46,7 +46,7 @@
     "\n",
     "<center>$ H_1 : \\exists_{i,j(i \\neq j)} :  \\mu_i \\neq \\mu_j $</center>\n",
     "\n",
-    "where $i,j = 1, 2, ..., 6 $, are the number of levels.\n",
+    "where $i,j = 1, 2, ..., 6 $, are the number of levels. \n",
     "\n",
     "If $H_0$ is true, the mean values are all equal, thus it was obtained a set of 6 samples withdrawn from the same population."
    ]
