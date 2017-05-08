@@ -35,27 +35,9 @@ To test $H_0$, the analysis of the variances of different populations (age group
 
 STATISTICAL MODEL
 
-Considering that the mean in each age group can be written as:
-
-where $\alpha_i = \mu_i - \mu$ is the age effect in each group.
-
-Then, the response $X_{i,j}$, distributed as $N(\mu + \alpha_i,\sigma^2)$, can be expressed in the terms of following model;
-
-where $\mu_i= \mu + \alpha_i$ is the mean value of the $i^{th}$ age-group in the population, $\mu$ is the mean value of the population, $\alpha_i$ is the effect of the $i^{th}$ age-group and $\epsilon_{ij} \sim N(0,\sigma^2)$ is a random residual.
-
-In this formulation, testing the null hypothesis $ H_0 : \mu_1 =\mu_2=...=\mu_6$ , is equivalent to test: $ H_0 : \alpha_1 =\alpha_2=...=\alpha_6$.
-
-Assuming that $H_0$ is true, then this leads us to a restatement of the hypothesis of equality of means, satisfying the following constraint:
-
-We need this constraint in the model in order to be identifiable: $k + 1$ parameters for only $k$ means, since there are an infinity of $(\mu ;\alpha_1 ;... ;\alpha_6 )$ that gives us the same means for each $X_{ij}$
-
-Following this decomposition, the analysis of variance is based on the decompositions of the observations,
-
-where $\bar x$ is an estimate of $\mu$, $\hat \alpha_i = (\bar x_i - \bar x)$ is an estimate of $\alpha_i$, and $(x_{i,j} - \bar x_l)$ is an estimate of the error $\epsilon_{ij} $.
-
 To fit our model, we will use the sample mean:
 
-corresponding to the $i^{th}$ age-group.
+corresponding to the age-group.
 
 However, to perform this analysis, we must validate the respective assumptions:
 
@@ -105,7 +87,7 @@ If we assume normality and homoscedasticity but we reject the null hypothesis, $
 to test:
 2.3. NONPARAMETRIC COUNTERPART OF ANALYSIS OF VARIANCE
 
-For the original data, $X_i = Sales_i$, where the normality assumption is violated, we will use an alternative method to the analysis of variance that does not depend on normality assumptions, the nonparametric tests are applicable regardless of the distribution’s form (distribution-free). However, in general, the parametric tests are more powerful than the nonparametric ones, that´s the reason we must validate the ANOVA assumptions before applying these tests.
+For the original data where the normality assumption is violated, we will use an alternative method to the analysis of variance that does not depend on normality assumptions, the nonparametric tests are applicable regardless of the distribution’s form (distribution-free). However, in general, the parametric tests are more powerful than the nonparametric ones, that´s the reason we must validate the ANOVA assumptions before applying these tests.
 2.3.1. Non Normal Populations
 
 As we can't assume normality using original data, we will use the following test statistic:
