@@ -1,18 +1,16 @@
-# Statistics
-Experiments Analysis
+## ANOVA & NONPARAMETRIC COUNTERPART
 
-
- [ANOVA and Non Parametric Counterparts](https://github.com/hugosilveiradacunha/Statistics/blob/master/ANOVANonparametricCounterpart.ipynb)
+Jupyter Notebook:
+[ANOVA and Non Parametric Counterparts](https://github.com/hugosilveiradacunha/Statistics/blob/master/ANOVANonparametricCounterpart.ipynb)
 
 This is a practical approach to a set of statistical techniques commonly used in One-way ANOVA process and nonparametric counterparts.
 
 The main objective was: to apply, interpret and compare the results of a limited set of parametric and non-parametric tests appropriate to solve a specific marketing problem.
 
 
-# STATISTICS - ANOVA & NONPARAMETRIC COUNTERPART
-## 1. INTRODUCTION
+### 1. INTRODUCTION
 
-## 2. METHODOLOGY
+### 2. METHODOLOGY
 
 I have included output from two statistical software packages, R and SAS, and try to complement both data analysis and analysis of experiments with some code, mix some text with the code, and publish this work as a notebook.
 
@@ -35,9 +33,7 @@ To test $H_0$, the analysis of the variances of different populations (age group
 
 STATISTICAL MODEL
 
-To fit our model, we will use the sample mean:
-
-corresponding to the age-group.
+To fit our model, we will use the sample mean of the corresponding age-group.
 
 However, to perform this analysis, we must validate the respective assumptions:
 
@@ -47,7 +43,7 @@ However, to perform this analysis, we must validate the respective assumptions:
 
     Homoscedasticity.
 
-2.1.1. Independence condition of the observations
+#### 2.1.1. Independence condition of the observations
 
 To conduct this study, an independent random sample of customers was obtained from each of the six age groups and each customer can only belong to one of each age group.
 2.1.2. Normal populations
@@ -61,7 +57,8 @@ We will test the normality condition using the following test statistics:
 to test:
 
 Considering that we have a satisfactory transformation that gives us a good fit to normality for $\lambda = 0$: $Y = ln(Sales_i)$, we will carry on both variables assuming, however, that they will follow different paths along the one-way ANOVA process and nonparametric counterparts. This approach will give us the possibility to go through multiple steps of the proposed methodology, the opportunity to apply multiple tests and, on the other hand, will also give us alternative results to be compared.
-2.1.3. Populations with the same variance
+
+#### 2.1.3. Populations with the same variance
 
 If the normality condition is verified, the hypothesis of homoscedasticity will be tested:
 
@@ -71,7 +68,7 @@ We will test the homoscedasticity condition using the following test statistics:
 
     Levene’s test
 
-2.1.4. ANOVA
+#### 2.1.4. ANOVA
 
 To test $H_0$, the analysis of the variances of different age groups, the model errors are assumed to be normally and independently distributed random variables with mean zero and variance $\sigma ^2$. The variance $\sigma^2$ is assumed to be constant for all Age Groups. In this experiment, we will use the transformed variable $Y = ln(X)$.
 2.1.5. MULTIPLE COMPARISON TESTS
@@ -85,7 +82,8 @@ If we assume normality and homoscedasticity but we reject the null hypothesis, $
     Scheffé’stest;
 
 to test:
-2.3. NONPARAMETRIC COUNTERPART OF ANALYSIS OF VARIANCE
+
+### 2.3. NONPARAMETRIC COUNTERPART OF ANALYSIS OF VARIANCE
 
 For the original data where the normality assumption is violated, we will use an alternative method to the analysis of variance that does not depend on normality assumptions, the nonparametric tests are applicable regardless of the distribution’s form (distribution-free). However, in general, the parametric tests are more powerful than the nonparametric ones, that´s the reason we must validate the ANOVA assumptions before applying these tests.
 2.3.1. Non Normal Populations
@@ -94,8 +92,8 @@ As we can't assume normality using original data, we will use the following test
 
     Kruskal-Wallis test
 
-to test:
-2.3.2. Nonparametric Multiple Comparison Tests
+
+#### 2.3.2. Nonparametric Multiple Comparison Tests
 
 If either normality or homocedasticity condition can't be assumed and we have rejected any of the hypothesis:
 
