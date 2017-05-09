@@ -21,7 +21,8 @@ The objective is to test the equality of the six populations’ means, i.e., tes
 where $i,j = 1, 2, ..., 6 $, are the number of levels.
 
 If $H_0$ is true, the mean values are all equal, thus it was obtained a set of 6 samples withdrawn from the same population.
-2.1. ONE-WAY ANOVA WITH FIXED EFFECTS
+
+#### 2.1. ONE-WAY ANOVA WITH FIXED EFFECTS
 
 To test $H_0$, the analysis of the variances of different populations (age groups), popularly known as ANOVA, should be applied.
 
